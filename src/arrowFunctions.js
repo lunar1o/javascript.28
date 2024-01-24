@@ -11,3 +11,16 @@ function Pessoa() {
 }
 
 const p1 = new Pessoa()
+
+
+function Tempo() {
+    this.tempo = 0
+
+    var mytimer = setInterval(() => {
+        let number = this.tempo--
+        console.log(number)
+        if(number == 0){
+            clearInterval(mytimer)
+        }
+    }, 200);
+}
